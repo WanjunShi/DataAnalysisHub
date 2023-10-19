@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wanjunshi.dataanalysishub.TopNController">
+   <center>
+      <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" fx:id="table">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="authorCol" prefWidth="75.0" text="Author" />
+            <TableColumn fx:id="contentCol" prefWidth="200.0" text="Content" />
+            <TableColumn fx:id="sharesCol" prefWidth="75.0" text="Shares" />
+            <TableColumn fx:id="likesCol" prefWidth="75.0" text="Likes" />
+            <TableColumn fx:id="dateCol" prefWidth="75.0" text="DateTime" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

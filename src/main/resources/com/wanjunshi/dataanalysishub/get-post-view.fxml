@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wanjunshi.dataanalysishub.GetPostController">
+   <padding>
+      <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+   </padding>
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Get Post by ID">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="8.0" top="8.0" />
+         </VBox.margin>
+      </Separator>
+      <Label text="ID">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idTF" editable="false">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </TextField>
+      <Label layoutX="26.0" layoutY="90.0" text="Content">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="contentTF" editable="false" layoutX="26.0" layoutY="121.0">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </TextField>
+      <Label layoutX="26.0" layoutY="154.0" text="Shares">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sharesTF" editable="false" layoutX="26.0" layoutY="177.0">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </TextField>
+      <Label layoutX="26.0" layoutY="202.0" text="Likes">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="likesTF" editable="false" layoutX="26.0" layoutY="225.0">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </TextField>
+      <Label layoutX="26.0" layoutY="250.0" text="Date Time (dd/mm/yyyy hh:mm)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="datetimeTF" editable="false" layoutX="26.0" layoutY="273.0">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </TextField>
+      <HBox>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
